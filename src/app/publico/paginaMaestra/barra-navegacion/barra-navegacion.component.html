@@ -1,0 +1,21 @@
+<nav>
+    <div class="nav-wrapper">
+      <a routerLink="/" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-departamentos">Departamentos</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-ciudades">Ciudades</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-habilidades">Habilidad</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="seguridad/cerrar-sesion">Cerrar Sesión</a></li>
+        <li *ngIf="!isLoggedIn"><a routerLink="seguridad/iniciar-sesion">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-departamentos">Departamentos</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-ciudades">Ciudades</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="parametros/listar-habilidades">Habilidad</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="seguridad/cerrar-sesion">Cerrar Sesión</a></li>
+    <li *ngIf="!isLoggedIn"><a routerLink="seguridad/iniciar-sesion">Iniciar Sesión</a></li>
+  </ul>

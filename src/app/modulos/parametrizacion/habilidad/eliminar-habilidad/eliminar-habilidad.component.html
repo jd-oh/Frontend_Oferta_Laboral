@@ -1,0 +1,15 @@
+<form>
+    <h3>Eliminación de Registros</h3>
+    <p>Está seguro de querer eliminar los datos registrados como:</p>
+    <ul>
+        <li *ngFor="let d of listaDatos">
+            {{d}}
+        </li>
+    </ul>
+    <button class="btn red waves-effect waves-light" type="button" (click)="EliminarRegistro()" name="action">Confirmar
+        <i class="material-icons right">delete</i>
+    </button>
+    &nbsp;&nbsp;
+    <a class="waves-effect blue waves-light btn" routerLink="/parametros/listar-departamentos"><i class="material-icons left">cancel</i>Cancelar</a>
+</form>
+<br />
